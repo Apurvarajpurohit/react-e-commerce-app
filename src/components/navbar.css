@@ -1,0 +1,82 @@
+/* src/components/Navbar/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Adjusted padding for more space */
+    background-color: #2AB4B8; /* Brand color */
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #1c9c9e; /* Subtle border */
+  }
+  
+  .navbar .logo {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 30px; /* Added margin to space out logo from other elements */
+  }
+  
+  .navbar .search-bar {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    width: 300px;
+    transition: all 0.3s ease;
+    margin-right: 30px; /* Added margin to space out search bar from cart icon */
+  }
+  
+  .navbar .search-bar:focus {
+    border-color: #1c9c9e;
+    outline: none;
+  }
+  
+  .navbar .cart-icon {
+    position: relative;
+    margin-right: 30px; /* Added margin to space out cart icon from user name */
+  }
+  
+  .navbar .auth-buttons {
+    display: flex;
+    gap: 20px; /* Increased gap between auth buttons */
+    align-items: center;
+  }
+  
+  .navbar .auth-buttons .MuiButton-root {
+    background-color: #ffffff;
+    color: #2AB4B8;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .auth-buttons .MuiButton-root:hover {
+    background-color: #e1f1f1;
+  }
+  
+  .navbar .user-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #1c9c9e;
+    transition: background-color 0.3s ease;
+    margin-right: 30px; /* Added margin to space out user name from logout button */
+  }
+  
+  .navbar .user-name:hover {
+    background-color: #169c98;
+  }
+  
+  .navbar .user-name .MuiTypography-root {
+    font-weight: 600;
+  }
+  

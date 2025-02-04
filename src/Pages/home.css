@@ -1,0 +1,94 @@
+/* home.css */
+
+/* Ensure the main container takes the full viewport height and width */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full screen height */
+    width: 100%; /* Ensure full width */
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+  }
+  
+  /* Main content area containing sidebar and product list */
+  .main-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1; /* Allow this section to grow and fill available space */
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 200px;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #ffffff;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensure sidebar takes full height */
+  }
+  
+  /* Product List Styles */
+  .product-list {
+    flex-grow: 1; /* Allow the product list to grow and fill remaining space */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  /* Product Card Styles */
+  .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-card .info {
+    padding: 10px;
+  }
+  
+  .product-card .info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .product-card .info .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2AB4B8;
+  }
+  
+  .product-card .info .category {
+    font-size: 14px;
+    color: gray;
+  }
+  
